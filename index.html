@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Boutique - Ropa de Mujer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #ff0050; /* Color inspirado en TikTok */
+        }
+
+        header p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin: 30px 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #eee;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 14px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #ff0050;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            width: 100%;
+            background-color: #25D366; /* Verde WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-buy:hover {
+            background-color: #128C7E;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GLOW BOUTIQUE</h1>
+        <p>Elige tus prendas favoritas y finaliza tu pedido por WhatsApp</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- SECCIÓN VERANO -->
+        <h2 class="section-title">☀️ Colección Verano</h2>
+        <div class="grid">
+            
+            <!-- Producto 1 -->
+            <div class="card">
+                <!-- Reemplaza la URL de la imagen en 'src' con las fotos de tu ropa -->
+                <img src="https://unsplash.com" alt="Vestido Playero" class="card-img">
+                <div class="card-info">
+                    <div class="product-title">Vestido Playero Floreado</div>
+                    <div class="product-price">$29.99</div>
+                    <!-- REEMPLAZA EL TELÉFONO ABAJO (Ej: 51999999999) e incluye el código de tu país -->
+                    <a href="https://wa.me." target="_blank" class="btn-buy">🛍️ Comprar por WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Top de Verano" class="card-img">
+                <div class="card-info">
+                    <div class="product-title">Top Crop Minimalista</div>
+                    <div class="product-price">$19.99</div>
+                    <a href="https://wa.me." target="_blank" class="btn-buy">🛍️ Comprar por WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN INVIERNO -->
+        <h2 class="section-title">❄️ Colección Invierno</h2>
+        <div class="grid">
+            
+            <!-- Producto 3 -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Abrigo de Invierno" class="card-img">
+                <div class="card-info">
+                    <div class="product-title">Abrigo Teddy Elegante</div>
+                    <div class="product-price">$59.99</div>
+                    <a href="https://wa.me." target="_blank" class="btn-buy">🛍️ Comprar por WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Suéter Lana" class="card-img">
+                <div class="card-info">
+                    <div class="product-title">Suéter de Lana Oversize</div>
+                    <div class="product-price">$34.99</div>
+                    <a href="https://wa.me." target="_blank" class="btn-buy">🛍️ Comprar por WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Glow Boutique. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
